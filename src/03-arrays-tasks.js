@@ -34,10 +34,12 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(len) {
+  const arr = new Array(Number(len));
+  arr.fill(1);
+  const i = 2;
+  return arr.map((e, index) => e + index * i);
 }
-
 /**
  * Returns the doubled array - elements of the specified array
  * are repeated twice using original order
